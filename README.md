@@ -30,11 +30,12 @@ O projeto **Verde Encanto** é uma loja online dedicada à venda de produtos nat
 Contribuições são bem-vindas!
 Para contribuir:
 
-Faça um fork do repositório.
-Crie uma branch para sua feature (git checkout -b minha-feature).
-Faça commit das suas alterações (git commit -m 'Adicionei uma nova feature').
-Envie para o repositório remoto (git push origin minha-feature).
-Crie um Pull Request.
+- Faça um fork do repositório.
+- Crie uma branch para sua feature (git checkout -b minha-feature).
+- Faça commit das suas alterações (git commit -m 'Adicionei uma nova feature').
+- Envie para o repositório remoto (git push origin minha-feature).
+- Crie um Pull Request.
+  
 ## Contato
 - **Nome:** Wellington Fernandes Muniz de Jesus
 - **Email:** wellington.muniz2108@gmail.com
