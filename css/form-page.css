@@ -1,0 +1,42 @@
+:root {
+    --main-font-family: 'Open Sans', sans-serif;
+    --alt-font-family: 'Open Sans', sans-serif;
+    --main-color-site: green;
+}
+
+*{
+    font-family: var(--main-font-family);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto 0;
+    max-width: 80%;
+}
+
+.header-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px;
+}
+
+#page-logo {
+    width: 250px;
+}
+
+.container>section{
+    border: 2px solid var(--main-color-site);
+    padding: 15px;
+    display: flex;
+    max-width: 14%;
+    margin: 0 auto;
+}
+
+form > button, button>a{
+    margin: 10px auto;
+    text-decoration: none;
+    color: black;
+}

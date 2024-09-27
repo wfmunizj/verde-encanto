@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wellington Fernandes Muniz de Jesus">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Verde Encanto</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header-wrapper">
+                <div>
+                    <a href="#" target="_self">
+                        <img id="page-logo" src="../img/main-page/verde_encanto-logo.png" alt="Logo verde encanto">
+                    </a>
+                </div>
+                <form id="search-form" action="/search" method="GET">
+                    <div id="search-box">
+                        <input type="text" name="query" id="search-box-txt" placeholder="Buscar...">
+                        <button type="submit">
+                            <img src="../img/main-page/pesquisa-de-lupa.png" alt="Lupa de Busca">
+                        </button>
+                    </div>
+                </form>
+                <div id="cart-container">
+                    <img id="logo-carrinho-header" src="../img/main-page/cesta_de_compras.png" alt="Cesta de compras / Carrinho">
+                    <span id="cart-counter">0</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="nav-container">
+            <div class="container">
+                <nav>
+                    <ul>
+                        <div class="products-nav">
+                            <li>
+                                <a href="index.html" class="page-links">
+                                    <figure class="product">
+                                        <img src="../img/main-page/folha.png" alt="Folha Pesquisa">Produtos Naturais
+                                    </figure>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="products-nav">
+                            <li>
+                                <a href="supplements.html" class="page-links">
+                                    <figure class="product">
+                                        <img src="../img/main-page/suplemento-dietetico.png" alt="Suplemento Pesquisa">Suplementos
+                                    </figure>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="products-nav">
+                            <li>
+                                <a href="nuts.html" class="page-links">
+                                    <figure class="product">
+                                        <img src="../img/main-page/noz.png" alt="Nozes Pesquisa">Nozes
+                                    </figure>
+                                </a>
+                            </li>
+                        </div>
+                        <div class="products-nav">
+                            <li>
+                                <a href="seeds.html" class="page-links">
+                                    <figure class="product">
+                                        <img src="../img/main-page/semente.png" alt="Semente Pesquisa">Sementes
+                                    </figure>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <section id="lateral-menu">
+                <fieldset id="food-type">
+                    <legend>Tipos de Alimentos</legend>
+                    <hr class="hr-food-filter">
+                    <div>
+                        <input class="lateral-filter" type="checkbox" id="zero_acucar">
+                        <label for="zero_acucar">Zero Açúcar</label>
+                    </div>
+                    <div>
+                        <input class="lateral-filter" type="checkbox" id="zero_gluten">
+                        <label for="zero_gluten">Zero Glúten</label>
+                    </div>
+                    <div>
+                        <input class="lateral-filter" type="checkbox" id="zero_lactose">
+                        <label for="zero_lactose">Zero Lactose</label>
+                    </div>
+                    <div>
+                        <input class="lateral-filter" type="checkbox" id="vegano">
+                        <label for="vegano">Vegano</label>
+                    </div>
+                    <div>
+                        <input class="lateral_filter" type="checkbox" id="vegetariano">
+                        <label for="vegetariano">Vegetariano</label>
+                    </div>
+                    <div>
+                        <input id="button-filter" type="button" value="Filtrar">
+                    </div>
+                </fieldset>
+            </section>
+            <section id="category-products">
+                <legend>Nozes</legend>
+                <hr class="hr-food-filter">
+                <div class="products">
+                    <li class="item">
+                        <div class="product-image-wrapper">
+                            <a href=""><img src="../img/products/amendoim/amaranto-graos-granel.jpg" alt="amaranto-graos-granel"></a>
+                        </div>
+                        <div class="infobox">
+                            <h2 class="product-name">Amaranto em Graos</h2>
+                            <div class="price">
+                                <h2>R$24,90</h2>
+                            </div>
+                            <div class="btn-add">
+                                <div class="box-btn-left">
+                                    <button class="buy-btn" id="teste" type="button">Comprar</button>
+                                </div>
+                                <div class="box-btn-rigth">
+                                    <button class="add-cart-btn" type="submit"><img src="../img/main-page/cesta_de_compras.png"
+                                            class="logo-carrinho" alt="Adicionar ao Carrinho"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="product-image-wrapper">
+                            <a href=""><img src="../img/products/amendoim/amendoim-crocante-granel.jpg" alt="amendoim-crocante-granel"></a>
+                        </div>
+                        <div class="infobox">
+                            <h2 class="product-name">Amendoim Crocante</h2>
+                            <div class="price">
+                                <h2>R$21,90/kg</h2>
+                            </div>
+                            <div class="btn-add">
+                                <div class="box-btn-left"><button class="buy-btn" type="button">Comprar</button></div>
+                                <div class="box-btn-rigth"><button class="add-cart-btn" type="submit"><img
+                                            src="../img/main-page/cesta_de_compras.png" class="logo-carrinho"
+                                            alt="Adicionar ao Carrinho"></button></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="product-image-wrapper">
+                            <a href=""><img src="../img/products/amendoim/castanha-de-baru-granel.jpg" alt="castanha-de-baru-granel"></a>
+                        </div>
+                        <div class="infobox">
+                            <h2 class="product-name">Castanha de Baru</h2>
+                            <div class="price">
+                                <h2>R$26,90/kg</h2>
+                            </div>
+                            <div class="btn-add">
+                                <div class="box-btn-left"><button class="buy-btn" type="button">Comprar</button></div>
+                                <div class="box-btn-rigth"><button class="add-cart-btn" type="submit"><img
+                                            src="../img/main-page/cesta_de_compras.png" class="logo-carrinho"
+                                            alt="Adicionar ao Carrinho"></button></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="product-image-wrapper">
+                            <a href=""><img src="../img/products/amendoim/castanha-de-caju-crua-w1-granel.jpg" alt="castanha-de-baru-granel"></a>
+                        </div>
+                        <div class="infobox">
+                            <h2 class="product-name">Castanha de Caju Crua</h2>
+                            <div class="price">
+                                <h2>R$21,90/kg</h2>
+                            </div>
+                            <div class="btn-add">
+                                <div class="box-btn-left"><button class="buy-btn" type="button">Comprar</button></div>
+                                <div class="box-btn-rigth"><button class="add-cart-btn" type="submit"><img
+                                            src="../img/main-page/cesta_de_compras.png" class="logo-carrinho"
+                                            alt="Adicionar ao Carrinho"></button></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="product-image-wrapper">
+                            <a href=""><img src="../img/products/amendoim/castanha-de-caju-metades.jpg" alt="castanha-de-caju-crua-w1-granel"></a>
+                        </div>
+                        <div class="infobox">
+                            <h2 class="product-name">Castanha de Caju Metade</h2>
+                            <div class="price">
+                                <h2>R$20,90/kg</h2>
+                            </div>
+                            <div class="btn-add">
+                                <div class="box-btn-left"><button class="buy-btn" type="button">Comprar</button></div>
+                                <div class="box-btn-rigth"><button class="add-cart-btn" type="submit"><img
+                                            src="../img/main-page/cesta_de_compras.png" class="logo-carrinho"
+                                            alt="Adicionar ao Carrinho"></button></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="product-image-wrapper">
+                            <a href=""><img src="../img/products/amendoim/castanha-de-caju-w1-torrada-salgada-.jpg" alt="castanha-de-caju-w1-torrada-salgada-"></a>
+                        </div>
+                        <div class="infobox">
+                            <h2 class="product-name">Castanha de Caju Salgadas</h2>
+                            <div class="price">
+                                <h2>R$19,90/kg</h2>
+                            </div>
+                            <div class="btn-add">
+                                <div class="box-btn-left"><button class="buy-btn" type="button">Comprar</button></div>
+                                <div class="box-btn-rigth"><button class="add-cart-btn" type="submit"><img
+                                            src="../img/main-page/cesta_de_compras.png" class="logo-carrinho"
+                                            alt="Adicionar ao Carrinho"></button></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="product-image-wrapper">
+                            <a href=""><img src="../img/products/amendoim/castanha-do-para-granel.jpg" alt="castanha-do-para-granel"></a>
+                        </div>
+                        <div class="infobox">
+                            <h2 class="product-name">Castanha do Pará</h2>
+                            <div class="price">
+                                <h2>R$61,90/kg</h2>
+                            </div>
+                            <div class="btn-add">
+                                <div class="box-btn-left"><button class="buy-btn" type="button">Comprar</button></div>
+                                <div class="box-btn-rigth"><button class="add-cart-btn" type="submit"><img src="../img/main-page/cesta_de_compras.png" class="logo-carrinho" alt="Adicionar ao Carrinho"></button></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="product-image-wrapper">
+                            <a href=""><img src="../img/products/amendoim/castanha-do-para-quebradas-.jpg" alt="castanha-do-para-quebradas-"></a>
+                        </div>
+                        <div class="infobox">
+                            <h2 class="product-name">Castanha do Pará Quebradas</h2>
+                            <div class="price">
+                                <h2>R$60,90/kg</h2>
+                            </div>
+                            <div class="btn-add">
+                                <div class="box-btn-left"><button class="buy-btn" type="button">Comprar</button></div>
+                                <div class="box-btn-rigth"><button class="add-cart-btn" type="submit"><img
+                                            src="../img/main-page/cesta_de_compras.png" class="logo-carrinho"
+                                            alt="Adicionar ao Carrinho"></button></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="product-image-wrapper">
+                            <a href=""><img src="../img/products/amendoim/nozes-quarts-extra-light.jpg" alt="nozes-quarts-extra-light"></a>
+                        </div>
+                        <div class="infobox">
+                            <h2 class="product-name">Nozes Partidas</h2>
+                            <div class="price">
+                                <h2>R$12,90/kg</h2>
+                            </div>
+                            <div class="btn-add">
+                                <div class="box-btn-left"><button class="buy-btn" type="button">Comprar</button></div>
+                                <div class="box-btn-rigth"><button class="add-cart-btn" type="submit"><img
+                                            src="../img/main-page/cesta_de_compras.png" class="logo-carrinho"
+                                            alt="Adicionar ao Carrinho"></button></div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <section>
+                <figure><img src="../img/main-page/verde_encanto-logo.png" alt="Logo Footer"></figure>
+                <div>
+                    <h3 id="contact"><a href="../html/form.html">CONTATO</a></h3>
+                    <p id="myName">Wellington Fernandes Muniz de Jesus</p>
+                </div>
+                <div id="extern-icons">
+                    <a href="https://www.instagram.com//wfmunizj" target="_blank"><i class="fab fa-instagram" id="ig"></i></a>
+                    <a href="http://www.github.com/wfmunizj" target="_blank"><i class="fab fa-github" id="git"></i></a>
+                    <a href="https://wa.me/+5511998309108" target="_blank"><i class="fab fa-whatsapp" id="wpp"></i></a>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
