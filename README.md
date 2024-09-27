@@ -22,7 +22,7 @@ O projeto **Verde Encanto** é uma loja online dedicada à venda de produtos nat
 ## Como Usar
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/verde-encanto.git
+   git clone https://github.com/wfmunizj/verde-encanto.git
    
 2. Abra o arquivo index.html em um navegador para visualizar o site.
 
