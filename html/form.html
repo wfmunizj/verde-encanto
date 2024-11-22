@@ -18,23 +18,83 @@
         <header>
             <div class="header-wrapper">
                 <div>
-                    <a href="/index.html" target="_self">
+                    <a href="/html/index.html" target="_self">
                         <img id="page-logo" src="../img/main-page/verde_encanto-logo.png" alt="Logo verde encanto">
                     </a>
                 </div>
             </div>
         </header>
         <section>
-            <form action=".">
-                <label for="fname">Primeiro nome<input id="fname" type="text"></label>
-                <label for="lname">Ultimo nome<input id="lname" type="text"></label>
-                <label for="email">Email<input id="email" type="email"></label>
-                <label for="telNo">Telefone<input id="telNo" type="number"></label>
-                <label for="age">Idade<input id="age" type="number"></label>
+            <form id="mainForm">
+                <label for="fname">Primeiro nome
+                    <input id="fname" type="text" required>
+                </label>
+                <span class="error" id="fnameError"></span>
+                <label for="lname">Último nome
+                    <input id="lname" type="text" required>
+                </label>
+                <span class="error" id="lnameError"></span>
+                <label for="email">Email
+                    <input id="email" type="email" required>
+                </label>
+                <span class="error" id="emailError"></span>
+                <label for="telNo">Telefone
+                    <input id="telNo" type="tel" placeholder="(xx) xxxxx-xxxx" pattern="\(\d{2}\) \d{5}-\d{4}" required>
+                </label>
+                <span class="error" id="telNoError"></span>
+                <label for="age">Idade
+                    <input id="age" type="number" min="0" max="120" required>
+                </label>
+                <span class="error" id="ageError"></span>
                 <button type="button" id="send">Enviar</button>
-                <button type="button" id="back"><a href="index.html" >Voltar</a></button>
+                <button type="button" id="back"><a href="index.html">Voltar</a></button>
             </form>
         </section>
     </div>
-    
+
+    <script>
+        document.getElementById('send').addEventListener('click', function () {
+            const form = document.getElementById('mainForm');
+            let isValid = true;
+
+            document.querySelectorAll('.error').forEach(error => error.textContent = '');
+
+            const fname = document.getElementById('fname');
+            if (!fname.value.trim()) {
+                document.getElementById('fnameError').textContent = 'Por favor, insira o primeiro nome.';
+                isValid = false;
+            }
+
+            const lname = document.getElementById('lname');
+            if (!lname.value.trim()) {
+                document.getElementById('lnameError').textContent = 'Por favor, insira o último nome.';
+                isValid = false;
+            }
+
+            const email = document.getElementById('email');
+            if (!email.validity.valid) {
+                document.getElementById('emailError').textContent = 'Por favor, insira um email válido.';
+                isValid = false;
+            }
+
+            const telNo = document.getElementById('telNo');
+            if (!telNo.validity.valid) {
+                document.getElementById('telNoError').textContent = 'Por favor, insira um telefone válido no formato (xx) xxxxx-xxxx.';
+                isValid = false;
+            }
+
+            const age = document.getElementById('age');
+            if (!age.validity.valid) {
+                document.getElementById('ageError').textContent = 'Por favor, insira uma idade válida (0-120).';
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert('Formulário enviado com sucesso!');
+                form.reset(); 
+            }
+        });
+    </script>
 </body>
+
+</html>
